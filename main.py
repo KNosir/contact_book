@@ -11,7 +11,7 @@ while breaking_the_loop:
         email = input('Enter email: ')
         writing_file(name, phone, email)
     elif command.lower() == 'search':
-        pass
+        search_input = input()
     elif command.lower() == 'exit':
         print('')
         print(f'-----------')
@@ -22,17 +22,22 @@ while breaking_the_loop:
     elif command.lower() == 'help':
         print(
         '''
-        "search" for seacrching.
         "add" to add new contact.
-        "exit" if you want to exit
         "contacts" all contacts list in table
+        "exit" if you want to exit
         "help" commands list
+        "search" for seacrching.       
         '''
         )
+    elif command.lower() == 'contacts':
+        show_contact_in_table()
     else:
-        print('')
-        print(f'-----------')
-        print(f'Try to type correctly')
-        print(f'-----------')
-        print('')
-    
+        print("""
+
+        ---------------------
+        Incorrect word!!!
+        For more information 
+            type "help"
+        ---------------------
+
+        """)

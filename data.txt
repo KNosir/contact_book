@@ -1,2 +1,3 @@
-|{"name":"Nosir", "phone":"985177715", "email":"kamolovnosir99@Gmail.com"}|
-|{"name":"Nosir", "phone":"Kamolob", "email":"kamolovnosir99@Gmail.com"}|
+|["Nosir", "918004455", "kamolovnosir99@gmail.com"]|
+|["Qurbonali\", "benomer", "beemail"]|
+|["Guli", "30470", "ketmonxonavo@gmail.com"]|
