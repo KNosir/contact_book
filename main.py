@@ -62,7 +62,7 @@ while breaking_the_loop:
     elif command.lower() == 'exit':
         print('')
         print(f'-----------')
-        print(f'See later ')
+        print(f'See you later! :) ')
         print(f'-----------')
         print('')
         breaking_the_loop = False
