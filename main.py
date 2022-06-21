@@ -80,14 +80,6 @@ while breaking_the_loop:
     #completed
     elif command.lower() == 'contacts':
         show_contact_in_table()
-    # elif command.lower() == 'delete':
-    #     index = int(input('Input the index for del: '))
-    #     index += 1
-    #     deleted_list_index = []
-    #     deleted_list_index.append(index)
-    #     print(deleted_list_index)
-    
-    #completed Incorrect input part
     else:
         print("""
 
