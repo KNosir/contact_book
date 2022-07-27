@@ -27,21 +27,22 @@ def separated_file_into_list_by_dic():
         if len(i) > 2:
             i = list(map(str.strip, i.strip('][').replace('"', '').split(',')))
             free_list.append(i)
-    free_list.insert(0, ['Name', 'Phone number', 'E-mail'])
+    #free_list.insert(0, ['Name', 'Phone number', 'E-mail'])
 
     return free_list
 #contacts
 def show_contact_in_table():
     result = separated_file_into_list_by_dic()
-    print(tabulate(result, tablefmt='psql', headers='firstrow', showindex='always'))
+    print(tabulate(result, tablefmt='psql', headers=['Name', 'Phone number', 'E-mail'], showindex='always'))
 
 def searching(key_word): 
     result_list = []
     for item in separated_file_into_list_by_dic():
         if key_word.lower() in ''.join(item).lower():
             result_list.append(item)
+    #result_list.insert(0, ['Name', 'Phone Number', 'E-mail'])
     
-    print(tabulate(result_list, headers='firstrow', floatfmt='grid', showindex='always'))
+    print(tabulate(result_list, headers=['Name', 'Phone number', 'E-mail'], floatfmt='grid', showindex='always'))
 
         
 
