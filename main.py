@@ -40,7 +40,7 @@ def searching(key_word):
     for item in separated_file_into_list_by_dic():
         if key_word.lower() in ''.join(item).lower():
             result_list.append(item)
-    result_list.insert(0, ['Name', 'Phone Number', 'E-mail'])
+    
     print(tabulate(result_list, headers='firstrow', floatfmt='grid', showindex='always'))
 
         
